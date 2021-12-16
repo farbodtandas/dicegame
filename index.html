@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/styles.css">
+        
+        <script src="/scripts/index.js" defer></script>
+
+        <title>
+            Dice Game
+        </title>
+    </head>
+    
+    <div>
+    </div>
+    <body>
+        <div id="popup-background">
+            <div id="popup">
+                <h1>GAME OVER</h1>
+                <div class="popup-text">
+                    <h2 class="winner"></h2>
+                </div>
+                <input id="popup-button" type="submit" name="submit" value="Play Again">
+            </div>
+        </div>
+        <div class="top">
+            <div>
+                <header>
+                    <h1 class="top-text">Dice Game</h1>
+                    <h2>By Farbod Tandas</h2>
+                </header>
+            </div>
+        </div>
+        <div>
+            <div class="middle">
+                <div class="left-cont">
+                    <h2 id="player-points">POINTS: 0</h2>
+                    <h2 id="player-roll">ROLL: 0</h2>
+                </div>
+                <div class="mid-cont">
+                    <div>
+                        <div class="versus">
+                            <h1>YOU</h1>
+                            <h1>VS.</h1>
+                            <h1>COMP</h1>
+                        </div>
+                        <div class="game">
+                            <div class="dice">
+                                <img class="img1" src="/images/dice-1.png">
+                            </div>
+                            <div class="dice">
+                                <img class="img2" src="/images/dice-1.png">
+                            </div>
+                            <div class="dice">
+                                <img class="img3" src="/images/black-dice-1.png">
+                            </div>
+                            <div class="dice">
+                                <img class="img4" src="/images/black-dice-1.png">
+                            </div>
+                        </div>
+                        <h2 class="winlose">-</h2>
+                        <div>
+                            <button class="roll-button" onclick="rollTheDice()">ROLL</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-cont">
+                    <h2 id="comp-points">POINTS: 0</h2>
+                    <h2 id="comp-roll">ROLL: 0</h2>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="footer">
+                <h3>COMP 2132</h3>
+            </div>
+        </div>
+    </body>
+</html>
